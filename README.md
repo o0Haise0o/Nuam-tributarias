@@ -1,9 +1,8 @@
-# Nuam-tributarias
 Nuam-tributarias
 Proyecto universitario para la gestión de calificaciones tributarias. Desarrollado en un stack Full Stack con Django (Backend API) y React + TypeScript (Frontend).
 
 Descripción
-Esta plataforma permite la administración (CRUD) de calificaciones financieras, el registro de auditoría de cambios y la carga masiva de datos a través de archivos CSV.
+Esta plataforma permite la administración (CRUD) de calificaciones financieras, el registro de auditoría de cambios y la carga masiva de datos a través of archivos CSV.
 
 Características Principales
 Gestión CRUD: Creación, Lectura, Actualización (con modal) y Eliminación de Calificaciones.
@@ -61,11 +60,20 @@ cd backend/
 # 4. Aplicar migraciones (creará el archivo db.sqlite3)
 python manage.py migrate
 
-# 5. Crear un superusuario para acceder al /admin
+# 5. (Opcional) Crear un superusuario
+#    Omite este paso si usarás el super admin por defecto.
 python manage.py createsuperuser
 
 # 6. Iniciar el servidor de Django (API)
 python manage.py runserver
+Nota sobre Super Admin: Si la base de datos ya incluye un super admin por defecto, sus credenciales son:
+
+Usuario: bruno
+
+Email: bruno.cm@live.com
+
+Contraseña: pepelotudo
+
 Opción B: Windows (CMD o PowerShell)
 Bash
 
@@ -82,12 +90,13 @@ cd backend\
 # 4. Aplicar migraciones (creará el archivo db.sqlite3)
 python manage.py migrate
 
-# 5. Crear un superusuario para acceder al /admin
+# 5. (Opcional) Crear un superusuario
+#    Omite este paso si usarás el super admin por defecto.
 python manage.py createsuperuser
 
 # 6. Iniciar el servidor de Django (API)
 python manage.py runserver
-Resultado: La API estará corriendo en http://127.0.0.1:8000. Deja esta terminal abierta.
+Resultado: La API estará corriendo en http://127.0.0.1:8000. Acceso al Panel de Admin: Inicia sesión en http://127.0.0.1:8000/admin con las credenciales del superusuario.
 
 3. Configurar el Frontend (React)
 Abre una NUEVA TERMINAL (no cierres la del backend). Los comandos son idénticos para Linux y Windows.
@@ -105,4 +114,8 @@ npm run dev
 La aplicación React estará corriendo en http://localhost:5173 (o el puerto que indique Vite).
 
 Autores
-Bruno Contreras, Jaime Matute, Tomas Bello
+Bruno Contreras
+
+Jaime Matute
+
+Tomas Bello
