@@ -1,0 +1,5 @@
+Django==4.2.1
+djangorestframework==3.14.0
+django-cors-headers
+django-filter
+# Agrega cualquier otra dependencia que hayas usado (ej: Pillow, python-decouple)
